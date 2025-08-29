@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bootstrap-5.3.7/dist/js/bootstrap.min.js" defer></script>
+    <script src="js/script.js?v=4" defer></script>
+    <title>Document</title>
+</head>
+    <body>
+        
+        <div class="container-fluid">
+            <div class="row pt-3">
+                <h2 id="currentNumber">Current 0</h2>
+                <h2 id="totalNumber">Total 0</h2>
+            </div>
+            <div class="row pt-3">
+                <div class="col-6">
+                    <button id="minusButton" class="text-center">
+                        <h1 class="text">-</h1>   
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button id="plusButton" class="text-center">
+                        <h1>+</h1>   
+                    </button>
+                </div>
+
+                <div class="col-6 pt-3">
+                    <button id="resetCounter" class="text-center">
+                        <h1>reset</h1>   
+                    </button>
+                </div>
+                <div class="col-6 pt-3">
+                    <button id="saveCounter" class="text-center" data-bs-toggle="modal" data-bs-target="#modal-save-counter">
+                        <h1>save</h1>   
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-save-counter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Save event counter</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action=""  enctype="multipart/form-data">
+                                <input type="hidden" name="totalCount" id="saveTotalCounter"><br>
+                                event:<br>
+                                <input type="text" name="event" required><br>
+                                <input type="hidden" name="date" value="" id="saveDateCounter"><br>
+
+                               <!-- <input type="submit" name="submitItem" value="Add item"><br><br>-->
+
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" name="submitCounter" class="btn btn-success" id="saveCounterToDB" data-bs-dismiss="modal">Save</button>
+                        </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+
+    </body>
+</html>
