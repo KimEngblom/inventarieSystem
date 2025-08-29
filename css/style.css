@@ -1,0 +1,26 @@
+.indexButton{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    color: whitesmoke;
+    background-color: blueviolet;
+}
+
+.card{
+    width: 40%;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.cardPicture{
+   width: auto;  
+   contain: center;
+}
+
+#test{
+    background-color: black; 
+}
+
+.center{
+    text-align: center;
+}

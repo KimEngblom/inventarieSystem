@@ -1,0 +1,1 @@
+se ut som inventory men modal ha bara delete eller fast edit 
